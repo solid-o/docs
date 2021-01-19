@@ -69,10 +69,18 @@ $resolver->resolve(ProductInterface::class, '2.0');  // Will return a new instan
 $resolver->resolve(ProductInterface::class, 'latest');  // Will return a new instance of App\DTO\v2\v2_0\Product
 ```
 
+If using the [versioning component](./versioning.md) the version will be set as `_version` attribute on the request
+object. `Resolver` class accepts request objects also and extract the version to retrieve the correct DTO.
+
+```php
+assert($request instanceof Symfony\Component\HttpFoundation\Request);
+$resolver->resolve(ProductInterface::class, $request);
+```
+
 ## How to use DTO extensions
 
 In order to use a DTO extension like the one contained in the [data transformers component](./data-transformers.md?id=dto-integration)
-or a custom one <!-- TODO: add link here to documentation on how to write a custom extesion --> you need to pass a
+or a [custom one](./dto.md?id=writing-a-custom-extension) you need to pass a
 correctly configured `AccessInterceptorFactory` as the `proxyFactory` parameter of `createFromNamespace`.
 
 Example:

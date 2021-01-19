@@ -43,4 +43,4 @@ All the solido libraries and components are releases under the business-friendly
 
 ## Contributing
 
-Contributions, issues and PRs are welcome. See the [contributing](./contributing.md) section for informations.
+Contributions, issues and PRs are welcome. See the [contributing](./contributing.md) section for information.

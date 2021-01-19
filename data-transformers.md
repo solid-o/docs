@@ -23,7 +23,7 @@ The `transform` method simply transforms the data passed into another representa
 ## DTO integration
 
 Data transformers express their full potential when paired with DTOs.  
-As you can read in the [dto-management component](./dto-management.md) the DTOs are not simple containers of data, but can be
+As you can read in the [dto chapter](./dto.md) the DTOs are not simple containers of data, but can be
 *enhanced* via extensions and proxy code generation.
 
 Data transformers library provides one of this extension (in the `Solido\DataTransformers\TransformerExtension` class)

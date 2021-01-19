@@ -4,7 +4,7 @@
 
 It is the first trial to standardize the way to write REST APIs routes and controllers in Symfony.  
 It is limited in its features as do not offer filtering or pagination utilities, is controller-based 
-(and not resource-based) and contains too much magic in routes registration, but had decoupled
+(and not resource-based) and contains too much magic in routes registration, but has decoupled
 view handling and serialization which inspired some concepts of Solido.
 
 ## API Platform
