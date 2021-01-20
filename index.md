@@ -19,9 +19,12 @@ Framework integrations are welcome (at the moment only the Symfony one is presen
 - [body-converter](./body-converter.md): normalize body into a request object to be handled without special Content-Type checks
 - [cors](./cors.md): handles CORS headers and OPTIONS requests
 - [data-transformers](./data-transformers.md): set of text to object transformers, used to convert request data
-- [dto-management](./dto-management.md): DTOs are first class citizens in Solido. Versioning, patching, serialization, even routing happens on DTOs. For more information see the [DTO section](./dto.md)
-- pagination: handles pagination (and endless-pagination) in RESTful ways.
-- patch-manager: handles the PATCH request. Can understand marge-patch requests as well as patch described in RFC ... and handles them in one single operation.
+- [dto-management](./dto-management.md): DTOs are first class citizens in Solido. Versioning, patching, serialization, 
+  even routing happens on DTOs. For more information see the [DTO section](./dto.md)
+- [pagination](./pagination.md): handles pagination (and endless-pagination) in RESTful ways.
+- [patch-manager](./patch-manager.md): handles the PATCH request. Can understand 
+  [marge-patch](https://tools.ietf.org/html/rfc7386) requests as well as json patch described
+  in [RFC 6902](https://tools.ietf.org/html/rfc6902) and handles them in one single operation.
 - query-language: powerful query language for REST lists, can automatically build doctrine queries and can be extended to support custom filtering
 - security-policy-checker: utilities to check complex security policies based on route, resource and other conditions [WIP]
 - serialization: provides abstraction to serializers. See [Serialization section](./serialization.md) for more information
