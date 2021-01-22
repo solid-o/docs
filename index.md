@@ -25,10 +25,11 @@ Framework integrations are welcome (at the moment only the Symfony one is presen
 - [patch-manager](./patch-manager.md): handles the PATCH request. Can understand 
   [marge-patch](https://tools.ietf.org/html/rfc7386) requests as well as json patch described
   in [RFC 6902](https://tools.ietf.org/html/rfc6902) and handles them in one single operation.
-- query-language: powerful query language for REST lists, can automatically build doctrine queries and can be extended to support custom filtering
+- [query-language](./query-language.md): powerful query language for REST lists, can automatically build doctrine
+  queries and can be extended to support custom filtering
 - security-policy-checker: utilities to check complex security policies based on route, resource and other conditions [WIP]
 - serialization: provides abstraction to serializers. See [Serialization section](./serialization.md) for more information
-- versioning: analyses the request and guesses the version request by the user.
+- [versioning](./versioning.md): analyses the request and guesses the version request by the user.
 
 ## Framework integrations
 
