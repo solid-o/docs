@@ -23,8 +23,9 @@ is very hard to extend thanks to its _final classes_ paired with very long priva
 
 API Platform is _not that modular_: all its components are packaged in one single library and it is nearly impossible to install only the used components.
 
-It also has some good features such as **jsonld** support and **graphql**, but they are major drawbacks when working
-with multiple applications or microservices as the application do not know anything about the other services’ resources.
+It also has some good features such as **jsonld** support and **graphql**, but in its implementation there are some major drawbacks working in a domain 
+with multiple services, for example referencing their identifiers but not being able to expose their schemas natively. 
+There are multiple solutions to workaround this but it's quite a bit of additional effort at the moment of writing.
 
 ## Laminas API Tools
 
