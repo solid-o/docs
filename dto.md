@@ -81,7 +81,7 @@ class User implements UserInterface
     public $name;
     public $email;
 
-    public funcion get(Entity\User $user): self
+    public function get(Entity\User $user): self
     {
         $this->name = $user->getName();
         $this->email = $user->getEmail();
@@ -102,7 +102,7 @@ class User implements UserInterface
     public $email;
     public $phone;      // New field
 
-    public funcion get(Entity\User $user): self
+    public function get(Entity\User $user): self
     {
         $this->name = $user->getName();
         $this->email = $user->getEmail();
@@ -117,7 +117,7 @@ Now, with the `ServiceLocatorRegistry` and `Resolver` utilities from dto-managem
 a new instance of the `UserInterface` DTO just passing the version you want to retrieve to the resolver
 
 ```php
-$serviceLocatoryRegistry = \Solido\DtoManagement\Finder\ServiceLocatorRegistry::createFromNamespace('App\DTO');
+$serviceLocatorRegistry = \Solido\DtoManagement\Finder\ServiceLocatorRegistry::createFromNamespace('App\DTO');
 $resolver = new \Solido\DtoManagement\InterfaceResolver\Resolver($serviceLocatorRegistry);
 
 $resolver->resolve(UserInterface::class, '1.0');
