@@ -1,6 +1,8 @@
-# Alternatives - why not to use ... ?
+# FAQ
 
-## FOSRestBundle
+## 1) Why not to use ... ?
+
+### FOSRestBundle
 
 It is the first trial to standardize the way to write REST APIs routes and controllers in Symfony.  
 
@@ -8,7 +10,7 @@ It is _controller-based_ (instead of _resource-based_), does not offer _filterin
 
 Otherwise has _decoupled view handling_ and _serialization_ which inspired some of the Solido core concepts.
 
-## API Platform
+### API Platform
 
 It is a more complete solution to build a REST API in Symfony. 
 
@@ -27,7 +29,7 @@ It also has some good features such as **jsonld** support and **graphql**, but i
 with multiple services, for example referencing their identifiers but not being able to expose their schemas natively. 
 There are multiple solutions to workaround this but it's quite a bit of additional effort at the moment of writing.
 
-## Laminas API Tools
+### Laminas API Tools
 
 Probably the easiest way to create an API project in PHP.
 

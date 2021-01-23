@@ -14,6 +14,8 @@ It also provides integration with the popular PHP framework Symfony (integration
 Solido is built as a set of libraries and tools that eases the development of a REST API in a framework agnostic way.  
 Framework integrations are welcome (at the moment only the Symfony one is present) but are not needed to run the standalone components.
 
+If you are interested why we decided not to use other php alternative libraries take a look to our [FAQ](./faq.md) section.
+
 ## Components
 
 - [body-converter](./body-converter.md): normalize body into a request object to be handled without special Content-Type checks
