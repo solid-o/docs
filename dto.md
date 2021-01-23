@@ -143,8 +143,8 @@ A DTO extension could add methods and properties or generate interceptors for ex
 [Data transformer component](./data-transformers.md) has one of these extensions which analyzes the DTO classes
 via reflection and generates interceptors for transforming input data on property set or method call.
 
-!> Generated code is only available while retrieving DTOs from a resolver. If you create a DTO instance with the `new`
-keyword, the generated code will not be available as it is only present in the generated proxies.
+!> Generated code is only available while retrieving DTOs from a resolver. That's why if you instantiate a DTO object with the `new`
+construct keyword, the generated code will not be available.
 
 ### Writing a custom extension
 
@@ -152,15 +152,15 @@ DTO extensions must implement the `Solido\DtoManagement\Proxy\Extension\Extensio
 on `AccessInterceptorFactory` configuration ([check the documentation on how to register an extension](./dto-management.md?id=how-to-use-dto-extensions)).
 
 The `ExtensionInterface` exposes only one method (`extend`) which accepts a `ProxyBuilder` object.  
-The `ProxyBuilder` object is all what you need to add interfaces, traits, methods and properties to the generated proxy,
+The `ProxyBuilder` object is what you need to add interfaces, traits, methods and properties to the generated proxy,
 as well as add interceptors for methods and properties. Its `class` property gives you access to the `ReflectionClass`
 object of the versioned DTO being extended and the `properties` attribute should help you to filter and iterate through
 the DTO public and protected properties.
 
 !> NOTE: Interceptors for private properties and methods cannot be created.
 
-`ProxyBuilder` methods should be self-explanatory, but feel free to ask questions opening an issue on
-dto-management repository. The responses will be included in this documentation to be helpful to other developers.
+`ProxyBuilder` methods should be self-explanatory, but feel free to ask questions [opening an issue on dto-management repository](https://github.com/solid-o/dto-management/issues). 
+The responses will be included in this documentation to be helpful to other developers.
 
 Through `ProxyBuilder` you can statically analyze the DTO class, search for attributes/annotations, load metadata
 and generate public or protected methods, properties or interceptors for public and protected properties or methods.
