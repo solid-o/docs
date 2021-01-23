@@ -53,7 +53,7 @@ src              (App\)
 You can then create a dto registry and an associated resolver with:
 
 ```php
-$serviceLocatoryRegistry = \Solido\DtoManagement\Finder\ServiceLocatorRegistry::createFromNamespace('App\DTO');
+$serviceLocatorRegistry = \Solido\DtoManagement\Finder\ServiceLocatorRegistry::createFromNamespace('App\DTO');
 $resolver = new \Solido\DtoManagement\InterfaceResolver\Resolver($serviceLocatorRegistry);
 ```
 
@@ -90,7 +90,7 @@ $configuration = new \Solido\DtoManagement\Proxy\Factory\Configuration();
 $configuration->addExtension(new \Solido\DataTransformers\TransformerExtension());
 
 $proxyFactory = new \Solido\DtoManagement\Proxy\Factory\AccessInterceptorFactory($configuration);
-$serviceLocatoryRegistry = \Solido\DtoManagement\Finder\ServiceLocatorRegistry::createFromNamespace('App\DTO', proxyFactory: $proxyFactory);
+$serviceLocatorRegistry = \Solido\DtoManagement\Finder\ServiceLocatorRegistry::createFromNamespace('App\DTO', proxyFactory: $proxyFactory);
 ```
 
 ## Proxy factory configuration

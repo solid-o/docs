@@ -46,4 +46,4 @@
   - [Versioning](/dto.md?id=versioning)
   - [DTO extensions](/dto.md?id=dto-extensions)
 
-- [Alternatives (why not to use XYZ?)](/alternatives.md)
+- [FAQ](/faq.md)

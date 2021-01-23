@@ -40,8 +40,8 @@ All the operators starts with a dollar sign ($) and the argument(s) are enclosed
 - `$eq(value)`: equals, field must be exactly equal to `value`. This operator is implicitly applied when passing a string to a filter
 - `$neq(value)`: not equals, shortcut for `$not($eq(value))`
 - `$like(value)`: matches when `value` is contained case-insensitively into the specified field
-- `$gt(value)` and `$gte(value)`: greater than and greater than or equal, used to compare numeric or date values
-- `$lt(value)` and `$lte(value)`: less than and less than or equal, same as above
+- `$gt(value)` and `$gte(value)`: _greater than_ and _greater than or equal_, used to compare numeric or date values
+- `$lt(value)` and `$lte(value)`: _less than_ and _less than or equal_, same as above
 - `$range(lower, upper)`: matches when the value is contained in the *inclusive* range `[lower, upper]`
 - `$and(...)`: matches when all the expressions contained match
 - `$or(...)`: matches when one of the expressions contained match
