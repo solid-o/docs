@@ -46,7 +46,7 @@
     - [How it works](/versioning.md?id=how-it-works)
 
 - Framework integrations
-  - [Symfony](./symfony-integration.md?id=symfony-integrations)
+  - [Symfony](./symfony-integration.md?id=symfony-integration)
     - [Installation](./symfony-integration.md?id=installation)
     - [Configuration](./symfony-integration.md?id=configuration)
     - [Forms](./symfony-integration.md?id=forms)
