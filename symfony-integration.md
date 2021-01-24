@@ -202,6 +202,23 @@ app_dto:
 
 This will search for `#[Route]` attributes in all the DTOs `interfaces` found in `App\DTO` namespace.
 
+Example:
+
+```php
+// src/DTO/Interfaces/UserInterface.php
+
+use Symfony\Component\Routing\Annotation\Route;
+
+interface UserInterface
+{
+    #[Route('/user/{id}', method: 'GET')]
+    public function get(Entity\User $user): self;
+}
+```
+
+This will register a route responding to `GET /user/{id}` requests.  
+DTO routing loader implicitly sets `#[View]` attribute on controller.
+
 ## CORS
 
 [CORS component configuration](./cors.md?id=configuration) is exposed under `solido.cors` key.
