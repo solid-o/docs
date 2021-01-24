@@ -30,7 +30,7 @@ GET /users?birth_year=$and(1990, $gte(2000))    # Birth year can be exacly 1990 
 
 All the operators starts with a dollar sign ($) and the argument(s) are enclosed in parentheses.
 
-!> To escape the dollar sign or a parenthesis, the symbol must be preceded by a backslash (\).
+!> To escape the dollar sign or a parenthesis, the symbol must be preceded by a backslash (`\`).
 
 ### List of operators
 

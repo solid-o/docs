@@ -38,9 +38,21 @@
     - [Query language processor](/query-language.md?id=query-language-processor)
     - [Query language walker](/query-language.md?id=query-language-walker)
     - [Doctrine processors](/query-language.md?id=doctrine-processors)
+  - [Serialization](/serialization-component.md?id=serialization)
+    - [Installation](/serialization-component.md?id=installation)
+    - [How it works](/serialization-component.md?id=how-it-works)
   - [Versioning](/versioning.md?id=versioning)
     - [Installation](/versioning.md?id=installation)
     - [How it works](/versioning.md?id=how-it-works)
+
+- Framework integrations
+  - [Symfony](./symfony-integration.md?id=symfony-integrations)
+    - [Installation](./symfony-integration.md?id=installation)
+    - [Configuration](./symfony-integration.md?id=configuration)
+    - [Forms](./symfony-integration.md?id=forms)
+    - [Serialization](./symfony-integration.md?id=serialization)
+    - [DTO](./symfony-integration.md?id=dto)
+    - [CORS](./symfony-integration.md?id=cors)
 
 - [Data Transfer Objects](/dto.md?id=data-transfer-objects)
   - [Versioning](/dto.md?id=versioning)

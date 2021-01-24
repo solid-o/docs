@@ -18,24 +18,24 @@ If you are interested why we decided not to use other php alternative libraries 
 
 ## Components
 
-- [body-converter](./body-converter.md): normalize body into a request object to be handled without special Content-Type checks
-- [cors](./cors.md): handles CORS headers and OPTIONS requests
-- [data-transformers](./data-transformers.md): set of text to object transformers, used to convert request data
-- [dto-management](./dto-management.md): DTOs are first class citizens in Solido. Versioning, patching, serialization, 
-  even routing happens on DTOs. For more information see the [DTO section](./dto.md)
-- [pagination](./pagination.md): handles pagination (and endless-pagination) in RESTful ways.
-- [patch-manager](./patch-manager.md): handles the PATCH request. Can understand 
+- [body-converter](./body-converter.md?id=body-converter): normalize body into a request object to be handled without special Content-Type checks
+- [cors](./cors.md?id=cors): handles CORS headers and OPTIONS requests
+- [data-transformers](./data-transformers.md?id=data-transformer): set of text to object transformers, used to convert request data
+- [dto-management](./dto-management.md?id=dto-management): DTOs are first class citizens in Solido. Versioning, patching, serialization, 
+  even routing happens on DTOs. For more information see the [DTO section](./dto.md?id=data-transfer-objects)
+- [pagination](./pagination.md?id=pagination): handles pagination (and endless-pagination) in RESTful ways.
+- [patch-manager](./patch-manager.md?id=patch-manager): handles the PATCH request. Can understand 
   [marge-patch](https://tools.ietf.org/html/rfc7386) requests as well as json patch described
   in [RFC 6902](https://tools.ietf.org/html/rfc6902) and handles them in one single operation.
-- [query-language](./query-language.md): powerful query language for REST lists, can automatically build doctrine
+- [query-language](./query-language.md?id=query-language): powerful query language for REST lists, can automatically build doctrine
   queries and can be extended to support custom filtering
 - security-policy-checker: utilities to check complex security policies based on route, resource and other conditions [WIP]
-- serialization: provides abstraction to serializers. See [Serialization section](./serialization.md) for more information
-- [versioning](./versioning.md): analyses the request and guesses the version request by the user.
+- [serialization](./serialization-component.md?id=serialization): provides abstraction to serializers. See [Serialization section](./serialization.md) for more information
+- [versioning](./versioning.md?id=versioning): analyses the request and guesses the version request by the user.
 
 ## Framework integrations
 
-- symfony: provides integration with Symfony framework and security component. Enables per-field security on DTOs.
+- [symfony](./symfony-integration.md?id=symfony-integration): provides integration with Symfony framework and security component. Enables per-field security on DTOs.
 
 ## Client libraries
 
