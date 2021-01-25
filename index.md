@@ -30,7 +30,7 @@ If you are interested why we decided not to use other php alternative libraries 
 - [query-language](./query-language.md?id=query-language): powerful query language for REST lists, can automatically build doctrine
   queries and can be extended to support custom filtering
 - security-policy-checker: utilities to check complex security policies based on route, resource and other conditions [WIP]
-- [serialization](./serialization-component.md?id=serialization): provides abstraction to serializers. See [Serialization section](./serialization.md) for more information
+- [serialization](./serialization-component.md?id=serialization): provides abstraction to serializers.
 - [versioning](./versioning.md?id=versioning): analyses the request and guesses the version request by the user.
 
 ## Framework integrations
@@ -49,4 +49,4 @@ All the solido libraries and components are releases under the business-friendly
 
 ## Contributing
 
-Contributions, issues and PRs are welcome. See the [contributing](./contributing.md) section for information.
+Contributions, issues and PRs are welcome. See the [contributing](./CONTRIBUTING.md) section for information.

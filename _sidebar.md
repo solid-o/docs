@@ -57,5 +57,13 @@
 - [Data Transfer Objects](/dto.md?id=data-transfer-objects)
   - [Versioning](/dto.md?id=versioning)
   - [DTO extensions](/dto.md?id=dto-extensions)
+  
+- [Client libraries - Atlante](/atlante.md?id=atlante)
+  - [Installation](/atlante.md?id=installation)
+  - [Client](/atlante.md?id=client)
+  - [Requesters](/atlante.md?id=requesters)
+  - [Request decorators](/atlante.md?id=request-decorators)
 
-- [FAQ](/faq.md)
+- [Contributing](/CONTRIBUTING.md?id=contributing)
+- [FAQ](/faq.md?id=faq)
+- [Code of conduct](/CODE_OF_CONDUCT.md?id=contributor-covenant-code-of-conduct)

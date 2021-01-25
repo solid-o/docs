@@ -15,8 +15,6 @@ Additionally, provides two event listeners to call proxy initialization during s
 
 It is mostly by framework integrations during response processing.
 
-?> [Serialization section](./serialization.md) contains more information and recommendation on data serialization
-
 All the adapters implement `Solido\Serialization\SerializerInterface`, which exposes only the `serialize` method.  
 The `serialize` method three parameters:
 
