@@ -45,7 +45,8 @@ See [Atlante](./atlante.md) for further information.
 
 ## License
 
-All the solido libraries and components are releases under the business-friendly MIT license.
+All the solido libraries and components are releases under the business-friendly MIT license.  
+The documentation is released under CC0 license.
 
 ## Contributing
 

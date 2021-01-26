@@ -23,7 +23,7 @@ $ composer require solido/atlante-php
 ## Client
 
 The main client class (usually called `Client`) should be initialized passing a requester object (which effectively
-executes HTTP requests) and a set of [request decorators](?id=request-decorators).
+executes HTTP requests) and a set of [request decorators](./atlante.md?id=request-decorators).
 
 It exposes one main method `request` which allows you to perform a generic HTTP request and some shortcuts for
 the more common http methods (`get`, `post`, `put`, `patch` and `delete`).
