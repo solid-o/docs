@@ -158,7 +158,7 @@ even if no field is present in the request, subsequently calling related data va
 ## Serialization
 
 Serializer libraries will be automatically searched and the appropriate adapter will be registered
-if one of the serializer supported by [serialization component](./serialization-component.md) is found.
+if one of the serializer supported by [serialization component](./serialization-component.md?id=serialization) is found.
 
 The order in which the serializer libraries are searched is:
 

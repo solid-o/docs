@@ -43,7 +43,7 @@ When responding to a details request (`GET /resources/{id}`), always represent r
 
 ### 6. ...but add additional data to list entries
 
-When writing a list endpoint ([query language component](./query-language.md) will help you A LOT for this), create
+When writing a list endpoint ([query language component](./query-language.md?id=query-language) will help you A LOT for this), create
 a completely different DTO interface. In its implementation hide properties which are too deep to be useful in a list
 and add some _extra_ data, especially on relations.
 

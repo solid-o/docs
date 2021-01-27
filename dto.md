@@ -2,7 +2,7 @@
 
 DTOs are first class citizens in solido being the contact point of the request, the view and the database model.
 
-They also have a central role in versioning and can be enhanced (thanks to the [dto management component](./dto-management.md))
+They also have a central role in versioning and can be enhanced (thanks to the [dto management component](./dto-management.md?id=dto-management))
 with extensions which generate code that augments the functionalities of the DTO (and enables magic!).
 
 ## A simple DTO
@@ -48,7 +48,7 @@ Solido was born with a strong versioning engine in mind, and a central part of i
 All the versions of the same DTO (ex: all the DTOs representing the same *versioned* endpoint) shares a common interface.
 Interfaces are used to recall a specific (or the nearest) version of the DTO.
 
-!> NOTE: [dto management component](./dto-management.md) is needed for this kind of versioning.  
+!> NOTE: [dto management component](./dto-management.md?id=dto-management) is needed for this kind of versioning.  
 This needs a particular namespace structure to be created under an application sub-namespace (ex: `App\DTO`).<br><br>
 Interfaces are often grouped under a generic namespace (ex: `App\DTO\Interfaces` or `App\DTO\Contracts`) while
 versioned DTOs NEEDS to be placed under a namespace named as `{PREFIX}\v{MAJOR}\v{MAJOR}_{MINOR}` (ex: `App\DTO\v1\v1_0`).
@@ -135,12 +135,12 @@ the exact version is not found in the tree. [Discuss the idea opening an issue o
 ## DTO extensions
 
 Another interesting feature of DTOs is to be extensible via proxy and code generation.  
-Via [dto-management component](./dto-management.md) you can create or register extensions to be applied to DTOs.
+Via [dto-management component](./dto-management.md?id=dto-management) you can create or register extensions to be applied to DTOs.
 
 A DTO extension could add methods and properties or generate interceptors for existing
 (and non-private) methods and properties.
 
-[Data transformer component](./data-transformers.md) has one of these extensions which analyzes the DTO classes
+[Data transformer component](./data-transformers.md?id=data-transformers) has one of these extensions which analyzes the DTO classes
 via reflection and generates interceptors for transforming input data on property set or method call.
 
 !> Generated code is only available while retrieving DTOs from a resolver. That's why if you instantiate a DTO object with the `new`

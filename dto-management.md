@@ -2,7 +2,7 @@
 
 Manages, finds and enhance DTOs.
 
-!> Please read the [DTO section](./dto.md) of this documentation to learn about the role
+!> Please read the [DTO section](./dto.md?id=data-transfer-objects) of this documentation to learn about the role
 of DTOs in solido ecosystem.
 
 ## Installation
@@ -69,7 +69,7 @@ $resolver->resolve(ProductInterface::class, '2.0');  // Will return a new instan
 $resolver->resolve(ProductInterface::class, 'latest');  // Will return a new instance of App\DTO\v2\v2_0\Product
 ```
 
-If using the [versioning component](./versioning.md) the version will be set as `_version` attribute on the request
+If using the [versioning component](./versioning.md?id=versioning) the version will be set as `_version` attribute on the request
 object. `Resolver` class accepts request objects also and extract the version to retrieve the correct DTO.
 
 ```php

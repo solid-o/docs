@@ -14,7 +14,7 @@ It also provides integration with the popular PHP framework Symfony (integration
 Solido is built as a set of libraries and tools that eases the development of a REST API in a framework agnostic way.  
 Framework integrations are welcome (at the moment only the Symfony one is present) but are not needed to run the standalone components.
 
-If you are interested why we decided not to use other php alternative libraries take a look to our [FAQ](./faq.md) section.
+If you are interested why we decided not to use other php alternative libraries take a look to our [FAQ](./faq.md?id=faq) section.
 
 ## Components
 
@@ -41,7 +41,7 @@ If you are interested why we decided not to use other php alternative libraries 
 
 API consumers are also taken into consideration: Atlante project and libraries has been developed to help api consumers with useful classes and utilities.
 
-See [Atlante](./atlante.md) for further information.
+See [Atlante](./atlante.md?id=atlante) for further information.
 
 ## License
 
@@ -50,4 +50,4 @@ The documentation is released under CC0 license.
 
 ## Contributing
 
-Contributions, issues and PRs are welcome. See the [contributing](./CONTRIBUTING.md) section for information.
+Contributions, issues and PRs are welcome. See the [contributing](./CONTRIBUTING.md?id=contributing) section for information.

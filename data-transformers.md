@@ -23,7 +23,7 @@ The `transform` method simply transforms the data passed into another representa
 ## DTO integration
 
 Data transformers express their full potential when paired with DTOs.  
-As you can read in the [dto chapter](./dto.md) the DTOs are not simple containers of data, but can be
+As you can read in the [dto chapter](./dto.md?id=data-transfer-objects) the DTOs are not simple containers of data, but can be
 *enhanced* via extensions and proxy code generation.
 
 Data transformers library provides one of this extension (in the `Solido\DataTransformers\TransformerExtension` class)
@@ -172,7 +172,7 @@ Used in endless-pagination, converts a string into a PageToken representation. S
 #### UrnToItemTransformer
 
 Use an urn-to-item converter to transform a textual urn into an entity/document. See
-[urn section](./urn.md) for further information.
+[utilities section](./utilities.md?id=uniform-resource-name) for further information.
 
 ## Custom transformers
 
