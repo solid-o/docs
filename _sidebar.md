@@ -57,6 +57,9 @@
 - [Data Transfer Objects](/dto.md?id=data-transfer-objects)
   - [Versioning](/dto.md?id=versioning)
   - [DTO extensions](/dto.md?id=dto-extensions)
+
+- [Utilities](/utilities.md?id=utilities)
+  - [URN](/utilities.md?id=uniform-resource-name)
   
 - [Client libraries - Atlante](/atlante.md?id=atlante)
   - [Installation](/atlante.md?id=installation)
@@ -64,6 +67,7 @@
   - [Requesters](/atlante.md?id=requesters)
   - [Request decorators](/atlante.md?id=request-decorators)
 
+- [Tips 'n tricks](/tips_and_tricks.md?id=tips-39n-tricks)
 - [Contributing](/CONTRIBUTING.md?id=contributing)
 - [FAQ](/faq.md?id=faq)
 - [Code of conduct](/CODE_OF_CONDUCT.md?id=contributor-covenant-code-of-conduct)
