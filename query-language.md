@@ -25,7 +25,7 @@ Users list defined `name`, `email` and `birth_year` as filterable fields.
 GET /users                      # Will return the complete list, unfiltered
 GET /users?name=alessandro      # Will return the list of users whose name is exactly equal to "alessandro"
 GET /users?email=$like(gmail)   # Will return the list of users containing "gmail" (case-insensitive) in the "email" field
-GET /users?birth_year=$and(1990, $gte(2000))    # Birth year can be exacly 1990 or >= 2000
+GET /users?birth_year=$or(1990, $gte(2000))    # Birth year can be exacly 1990 or >= 2000
 ```
 
 All the operators starts with a dollar sign ($) and the argument(s) are enclosed in parentheses.
