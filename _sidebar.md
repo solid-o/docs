@@ -69,5 +69,6 @@
 
 - [Tips 'n tricks](/tips_and_tricks.md?id=tips-39n-tricks)
 - [Contributing](/CONTRIBUTING.md?id=contributing)
+- [Changelog](/changelog.md?id=changelog)
 - [FAQ](/faq.md?id=faq)
 - [Code of conduct](/CODE_OF_CONDUCT.md?id=contributor-covenant-code-of-conduct)
