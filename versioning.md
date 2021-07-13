@@ -42,7 +42,7 @@ Example:
 
 ```php
 class PathPrefixVersionGuesser implements \Solido\Versioning\VersionGuesserInterface {
-    public function guess(Request $request, ?string $default): ?string {
+    public function guess(object $request, ?string $default): ?string {
         $path = $request->getPathInfo();
         if ($match = preg_match('#^/v(\d+\.\d+)/', $path)) {
             return $match[1];

@@ -1,5 +1,22 @@
 # Changelog
 
+### 0.2.0 (2021-07-13)
+
+BC breaking changes:
+
+- [CORS] `solido/common` is a required dependency.
+- [QueryLanguage] `AbstractProcessor::buildIterator` signature has been changed.
+  Now it requires a `Query` object as second argument.
+- [Test utils] `solido/common` is a required dependency for response constraints.
+
+Changes:
+
+- Allow usage of PSR-7 ServerRequest objects
+
+Bugfix:
+
+- [Data transformers] fix undefined variable error
+
 ### 0.1.2 (2021-07-04)
 
 Changes:
