@@ -192,7 +192,7 @@ which subsequently call a DTO method.
 If `solido.dto.routing.loader` configuration key is set to `true` (default) you can add it to your `routing.yaml`
 file, specifying which namespace should be checked for `#[Route]` attributes and annotations.
 
-Example: (routing.yaml)
+Example: (routes.yaml)
 
 ```yaml
 app_dto:
