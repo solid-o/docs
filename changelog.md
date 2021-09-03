@@ -1,5 +1,17 @@
 # Changelog
 
+### Unreleased (0.2.1)
+
+Changes:
+
+- [DTO Management] fix accessor scope binding: use custom public scope simulator code generator
+- [Symfony] change annotations alias names
+- [Symfony] fix controller arguments resolution on DTO methods
+- [Symfony] fix preload crash when security component is not installed
+- [Symfony] fix error on container compilation when dto support is enabled but expression language component is missing
+- [Symfony] add Lock DTO extension
+- [Test utils] fix compatibility with `doctrine/cache` >= 2.0
+
 ### 0.2.0 (2021-07-13)
 
 BC breaking changes:
