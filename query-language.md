@@ -25,7 +25,7 @@ Users list defined `name`, `email` and `birth_year` as filterable fields.
 GET /users                      # Will return the complete list, unfiltered
 GET /users?name=alessandro      # Will return the list of users whose name is exactly equal to "alessandro"
 GET /users?email=$like(gmail)   # Will return the list of users containing "gmail" (case-insensitive) in the "email" field
-GET /users?birth_year=$orand(1990, $gte(2000))    # Birth year can be exacly 1990 or >= 2000
+GET /users?birth_year=$or(1990, $gte(2000))    # Birth year can be exacly 1990 or >= 2000
 ```
 
 All the operators starts with a dollar sign ($) and the argument(s) are enclosed in parentheses.
@@ -81,6 +81,50 @@ if ($result instanceof \Symfony\Component\Form\FormInterface) {
     ...
 }
 ```
+
+### Custom processors
+
+You can write a custom processor extending `Solido\QueryLanguage\Processor\AbstractProcessor` class and
+implementing `addField`, `getIdentifierFieldNames` and `buildIterator` methods.
+
+The `addField` method must create an instance of `Solido\QueryLanguage\Processor\FieldInterface` and add
+it to the `fields` array (the field name must be the key). If the field is orderable you must implement
+`Solido\QueryLanguage\Processor\OrderableFieldInterface` to allow validation of the sorting request header.
+See the [Custom fields section](#custom-fields) for more information.
+
+`getIdentifierFieldNames` must return an ordered array of the object identifiers (for example: the entity
+properties composing the primary key).
+
+`buildIterator` method should finally apply ordering rules, setting offset and limit fields and
+then execute the query based on the query builder conditions. The result must the wrapped into an object
+implementing `Iterator` (you can use an `ArrayIterator` if the result is a simple array of objects).
+
+### Custom fields
+
+A field represents a property your objects can be filtered by; in the Doctrine ORM case a field represents
+an entity Column, in DBAL the column on the database table.  
+You can add custom fields to the query processor to compose the query with a custom behavior (apply custom filters,
+write multi-column conditions, etc.).
+
+To do that, you have to create a class implementing `Solido\QueryLanguage\Processor\FieldInterface` (or 
+`Solido\QueryLanguage\Processor\OrderableFieldInterface` if the field could define the query order).
+
+The `addCondition` method will receive the `queryBuilder` object argument from the processor and the expression
+parsed from the query string. To build a well-formed condition to be added to the query builder you should
+use an [expression walker](#query-language-walker) which walks the expression chunk by chunk and allows you to
+build a condition to be added to the query builder.
+
+See the `Solido\QueryLanguage\Processor\Doctrine\DBAL\Field` class as an example on how to build a custom field.
+
+### Options
+
+The base processor accepts an array of options:
+
+- `default_order` (string): Define the query default order as `field[, ASC|DESC]` (ex: `name, ASC`)
+- `range-header` (bool): Use the `Range` HTTP header for query limiting and pagination (default: `true`)
+- `default_page_size` (int): The default page size of the list (default: null - no limit)
+- `max_page_size` (int): The maximum page size a client could request (default: null - no limit)
+- `order_validation_walker` (ValidationWalkerInterface): Allows you to define a custom validator walker for order field.
 
 ## Query language walker
 
@@ -174,6 +218,3 @@ $processor->addField('birth_year', [
     'validation_walker' => BirthYearValidationWalker::class,
 ]);
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyODE3ODc2N119
--->
