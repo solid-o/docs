@@ -1,16 +1,19 @@
 # Changelog
 
-### Unreleased (0.2.1)
+### 0.2.1 (2021-10-26)
 
 Changes:
 
 - [DTO Management] fix accessor scope binding: use custom public scope simulator code generator
+- [DTO Management] removed dead code
+- [Query language] abstract method `createField` removed from abstract processor
 - [Symfony] change annotations alias names
 - [Symfony] fix controller arguments resolution on DTO methods
 - [Symfony] fix preload crash when security component is not installed
 - [Symfony] fix error on container compilation when dto support is enabled but expression language component is missing
 - [Symfony] add Lock DTO extension
 - [Test utils] fix compatibility with `doctrine/cache` >= 2.0
+- [Test utils] fix compatibility with `doctrine/dbal` >= 3.0
 
 ### 0.2.0 (2021-07-13)
 
