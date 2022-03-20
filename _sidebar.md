@@ -1,3 +1,7 @@
+- [🇷🇺 To russian people](/to-russian-people.md)
+
+---
+
 - [Solido](/?id=solido)
   - [Introduction](/?id=introduction)
   - [Philosophy](/?id=philosophy)
