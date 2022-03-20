@@ -1,5 +1,28 @@
 # Changelog
 
+### 0.3.0 (2022-02-28)
+
+BC breaking changes:
+
+- [Common] `AutoSubmitRequestHandler` has been moved to data mapper component
+- [Query Language] Processors now use `DataMapperFactory` instead of symfony's `FormFactoryInterface`
+- [Patch Manager] `MergeablePatchableInterface` has been renamed to `MergePatchableInterface`
+- [Patch Manager] `MergePatchableInterface` does not expose `getTypeClass` anymore:
+  has been replaced with `getDataMapper(): DataMapperInterface` which returns a data mapper object (from data mapper component)
+- [Symfony] removed `form` configuration key. Not needed anymore
+- [Symfony] `CollectionType` and `UnstructuredType` form types have been moved into data mapper component
+- [Symfony] exceptions are now serialized as `application/problem+json`
+
+Changes:
+
+- [Api problem] Add Api problem component to serialize exceptions and errors in a standard way
+- [Data mapper] Add Data Mapper component to abstract request data mapping to objects/DTOs
+- [Patch Manager] rewritten property accessor internals
+- [Symfony] Add data mapper integration
+- [Symfony] Support symfony 6
+- [Test utils] Functional requests testing helpers
+- Multiple bugfixes
+
 ### 0.2.1 (2021-10-26)
 
 Changes:
